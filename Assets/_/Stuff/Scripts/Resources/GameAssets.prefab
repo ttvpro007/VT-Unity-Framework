@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1848020400031394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4660278464350348}
+  - component: {fileID: 114053222545026688}
+  m_Layer: 0
+  m_Name: GameAssets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4660278464350348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848020400031394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.0506113, y: 11.127766, z: -0.30743352}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114053222545026688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848020400031394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b803e20a4fd97b45be60489e2bf6f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  codeMonkeyHeadSprite: {fileID: 21300000, guid: 7f4a075bc5ba7954fa4a9748499ea70d,
+    type: 3}
+  Map: {fileID: 5256704433162999744, guid: 2e23c8567a193104fbb4edd1e207e1d5, type: 3}
+  s_ShootFlash: {fileID: 21300000, guid: ea0c4f661967a46418c1f753f1174c16, type: 3}
+  s_Bubble: {fileID: 21300000, guid: e0957acde16b17d459121f8f905e18a1, type: 3}
+  s_BubbleHandle: {fileID: 21300000, guid: 7db80b05722133b4f9ed5e97cf22cddc, type: 3}
+  s_PlayerDialogueSprite: {fileID: 21300000, guid: 6d9b76e293966bb4b834e7ffaa24c897,
+    type: 3}
+  s_PlayerPortrait: {fileID: 21300000, guid: 6d9b76e293966bb4b834e7ffaa24c897, type: 3}
+  s_TankPortrait: {fileID: 21300000, guid: 23e0e335b6127e946bb32dc8913b8510, type: 3}
+  s_HealerPortrait: {fileID: 21300000, guid: 0f3846d2fe0b9314fab44e1a1bf74cd8, type: 3}
+  s_SleezerPortrait: {fileID: 21300000, guid: 210cff45e78ebcd47b17b6c3629b025a, type: 3}
+  s_EnemyMinionOrangePortrait: {fileID: 21300000, guid: b81671d6a485d2c48b7677bd182b6c59,
+    type: 3}
+  s_EnemyMinionRedPortrait: {fileID: 21300000, guid: c357265e8aa171d46b2369c85288901d,
+    type: 3}
+  s_EnemyOgrePortrait: {fileID: 0}
+  s_EvilMonsterPortrait: {fileID: 21300000, guid: 7515d4b95a2733441bcdb0b6159c6f3e,
+    type: 3}
+  s_RandyPortrait: {fileID: 21300000, guid: 3911e3c5c4bd8134fa9c41b0993187b4, type: 3}
+  s_VendorPortrait: {fileID: 21300000, guid: a5a2d349725f3194797b1627e2d9f6d2, type: 3}
+  s_Cross: {fileID: 21300000, guid: 4945f11e1e5bbdc4b9dd2e5e9b4f7f02, type: 3}
+  s_Arrow: {fileID: 21300000, guid: d34b0ba90d7336a429d9cdd2a5bf3549, type: 3}
+  s_ExclamationPoint: {fileID: 21300000, guid: b7632e876e9343c419eb86d7512a27bb, type: 3}
+  s_Rope: {fileID: 21300000, guid: d048383d48b1f254a965f1d0b38c5a5f, type: 3}
+  pfSwordSlash: {fileID: 4449298464342230, guid: 462567ca14cd79e4cb487f6efed6ab29,
+    type: 3}
+  pfEnemy: {fileID: 4246798350079288, guid: f8c2c2216efde6240b4313f5fc702f55, type: 3}
+  pfEnemyFlyingBody: {fileID: 4749081688058082, guid: f2bda9adc6070fb4bb60f2d7835fa4e4,
+    type: 3}
+  pfImpactEffect: {fileID: 4232540825830159459, guid: 719648f9e37d4df428baf897aab977a7,
+    type: 3}
+  pfFollowerOvermap: {fileID: 5198968451213310977, guid: 788b13b72cdc74e4dbc70f98a9a63a9b,
+    type: 3}
+  pfEnemyOvermap: {fileID: 5198968451213310977, guid: 6cc49a65f51f2794cbb3bdd0df22fd65,
+    type: 3}
+  pfNPCOvermap: {fileID: 5198968451213310977, guid: 05fad5e2a886a8d418e86cbf674697c5,
+    type: 3}
+  pfCharacterBattle: {fileID: 5198968451213310977, guid: 7b73be1f317c8f1418deff50c36f3bd4,
+    type: 3}
+  pfChatBubble: {fileID: 2411851259603360537, guid: 73820a72301e3a7409b4a7f141096708,
+    type: 3}
+  pfChatBubbleUI: {fileID: 0}
+  pfDamagePopup: {fileID: 2920174026715650587, guid: d5cbb6859cac94e41a282a83df2e600c,
+    type: 3}
+  pfChatOption: {fileID: 3606242705803892667, guid: dabcfa98ffd2833449828dfde5a3344a,
+    type: 3}
+  pfFtnDewItemOvermap: {fileID: 2679625612835347244, guid: a1e47bd5eccd1bc49bcc89f6460b2e17,
+    type: 3}
+  pfHealthPotionItemOvermap: {fileID: 2679625612835347244, guid: 27a0a1e07a36ebf4ea5aaa1c4520515d,
+    type: 3}
+  pfObjectTractor: {fileID: 3696113065130378737, guid: 767e6ccb9ce3cfa40a1a93868daec2ea,
+    type: 3}
+  pfChatBubble_FtnDew: {fileID: 2411851259603360537, guid: 741524813a065ff419b2e3f9cc33a1aa,
+    type: 3}
+  pfChatBubble_FtnDew_2: {fileID: 2411851259603360537, guid: 683fb7a8846a0df499f80907714da51d,
+    type: 3}
+  pfChatBubble_FtnDew_3: {fileID: 2411851259603360537, guid: d2dea3f420c00a4479fa1dcffed5e3d4,
+    type: 3}
+  pfChatBubble_FtnDew_4: {fileID: 2411851259603360537, guid: 17b0fb2a70c0d4b40be2ad3c7ceb40b2,
+    type: 3}
+  pfSmokePuff: {fileID: 4994224826530151295, guid: fcb61860738b9f948a5c0d4f6ff83531,
+    type: 3}
+  pfKey: {fileID: 2818287030090543390, guid: 11a59bee6722a35428d0972b1f35a10d, type: 3}
+  m_WeaponTracer: {fileID: 2100000, guid: f3f8a9e888e8f7d4d9a9b9c0271d0338, type: 2}
+  m_MarineSpriteSheet: {fileID: 2100000, guid: ab5acf6e79667694d9ceb91aca8abdc3, type: 2}
+  t_Player: {fileID: 2800000, guid: 70b561011d801de4e94271659c060bc2, type: 3}
+  t_Tank: {fileID: 2800000, guid: 98275d6da57bb714ea9e257a4d3332f8, type: 3}
+  t_Sleezer: {fileID: 2800000, guid: bf8a22858cf3b0e41b0a539ae96f9286, type: 3}
+  t_Healer: {fileID: 2800000, guid: fc9de6ccd22573d4a84c74b2439feb2f, type: 3}
+  t_EnemyMinionOrange: {fileID: 2800000, guid: fc7d6b734d28b9440a73dbfc37bdb91c, type: 3}
+  t_EnemyMinionRed: {fileID: 2800000, guid: ee26d282c4f8f5744ae10604af586067, type: 3}
+  t_Ogre: {fileID: 2800000, guid: d2fcb99e6b3a93749bbc6001f754862f, type: 3}
+  t_Zombie: {fileID: 2800000, guid: 56dfc9934e48af442907b4fcfa1f3fce, type: 3}
+  t_Vendor: {fileID: 2800000, guid: 4683df0d57883514a9af846f72c54688, type: 3}
+  t_EvilMonster: {fileID: 2800000, guid: bca59aab4e8868d4288cb2ad9a8da86d, type: 3}
+  t_Randy: {fileID: 2800000, guid: 20c7fd524b2e5354a96b97d5fe69a455, type: 3}
+  t_Villager_1: {fileID: 2800000, guid: 358e4994499aeb64a8a0f5ebbcce362c, type: 3}
+  t_Villager_2: {fileID: 2800000, guid: f13529d5724b8b240906c14eaa9bc033, type: 3}
+  t_Villager_3: {fileID: 2800000, guid: e9322653d5a53e840b04895826c7ffca, type: 3}
+  t_Villager_4: {fileID: 2800000, guid: 995f8852289824c40b75c3525b606792, type: 3}
+  t_Villager_5: {fileID: 2800000, guid: 2cc5b8561b36c084495b4c5a4b0e1dcd, type: 3}
+  t_FtnDewArmor: {fileID: 2800000, guid: 676bd5e56a9c1224d997b9968551b2f0, type: 3}
+  t_SwordThousandTruths: {fileID: 2800000, guid: c91d34a45bdd10f4f8648896f6d13435,
+    type: 3}
+  soundAudioClipArray:
+  - sound: 0
+    audioClip: {fileID: 8300000, guid: 31d57df8e7c78e548bd4ee44f57b38c0, type: 3}
+    volume: 0.507
+  - sound: 1
+    audioClip: {fileID: 8300000, guid: 8f7fba0aabd387c49b61f2749a2f1b31, type: 3}
+    volume: 1
+  - sound: 2
+    audioClip: {fileID: 8300000, guid: 0268906ec0ea0544e8b690901305315e, type: 3}
+    volume: 1.349
+  - sound: 3
+    audioClip: {fileID: 8300000, guid: 0268906ec0ea0544e8b690901305315e, type: 3}
+    volume: 1.373
+  - sound: 4
+    audioClip: {fileID: 8300000, guid: 39d26d352d9acb34e9ae58df71baf92d, type: 3}
+    volume: 1.3
+  - sound: 5
+    audioClip: {fileID: 8300000, guid: 853e16586f58f9641836a5e0186e6cd0, type: 3}
+    volume: 1
+  - sound: 6
+    audioClip: {fileID: 8300000, guid: 87c4eb26d44b3ba4cbb20008330bc3dd, type: 3}
+    volume: 1
+  - sound: 7
+    audioClip: {fileID: 8300000, guid: 46436f04042e15c41b2b4a0e291c0934, type: 3}
+    volume: 0.208
+  - sound: 8
+    audioClip: {fileID: 8300000, guid: a13d90e6a3395bf4aaedaf7c95114e27, type: 3}
+    volume: 0.739
+  - sound: 9
+    audioClip: {fileID: 8300000, guid: 87c4eb26d44b3ba4cbb20008330bc3dd, type: 3}
+    volume: 1
+  - sound: 10
+    audioClip: {fileID: 8300000, guid: e18a9bb8669e1a94580c9c60bf01083e, type: 3}
+    volume: 0.564
+  - sound: 11
+    audioClip: {fileID: 8300000, guid: 6e5c05feace44d34ea08ec66f4d36a5d, type: 3}
+    volume: 0.78
