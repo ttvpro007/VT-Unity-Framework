@@ -1,0 +1,10 @@
+///This file is auto generated. Do not edit.
+##USING##
+
+namespace ##NAMESPACE##
+{
+	public class ##CLASS## ##INHERIT##
+	{
+		##CONTENT##
+	}
+}

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Diagnostics;
+using VT.Extensions;
 
 namespace VT.Diagnostics
 {
     public static class Benchmarker
     {
-        public static void Benchmark(Action action, int iterations)
+        public static void Benchmark(Action action, int iterations, string description = "")
         {
             GC.Collect();
             action?.Invoke(); // invoke once to avoid initialization cost
@@ -16,8 +17,11 @@ namespace VT.Diagnostics
                 action?.Invoke();
             }
             stopwatch.Stop();
-            UnityEngine.Debug.Log($"Individual time elapsed: {(stopwatch.ElapsedMilliseconds / iterations)} ms\n");
-            UnityEngine.Debug.Log($"Total time elapsed:      {stopwatch.ElapsedMilliseconds} ms\n");
+            UnityEngine.Debug.Log(
+                $"{description}\n" +
+                $"Total iterations: {iterations.ToShortenForm()}\n" +
+                $"Individual time elapsed: {stopwatch.ElapsedMilliseconds / iterations} ms\n" +
+                $"Total time elapsed: {stopwatch.ElapsedMilliseconds} ms\n");
         }
     }
 }

@@ -6,10 +6,16 @@ namespace VT.Utilities
     {
         public Boundary2D(Vector2 center, Vector2 dimension)
         {
-            xMin = center.x - dimension.x / 2f;
-            xMax = center.x + dimension.x / 2f;
-            yMin = center.y - dimension.y / 2f;
-            yMax = center.y + dimension.y / 2f;
+            Center = center;
+            Dimension = dimension;
+            xMin = Center.x - Dimension.x / 2f;
+            xMax = Center.x + Dimension.x / 2f;
+            yMin = Center.y - Dimension.y / 2f;
+            yMax = Center.y + Dimension.y / 2f;
+            Top = new Vector2(Center.x, yMax);
+            Bottom = new Vector2(Center.x, yMin);
+            Left = new Vector2(xMin, Center.y);
+            Right = new Vector2(xMax, Center.y);
             TopLeft = new Vector2(xMin, yMax);
             TopRight = new Vector2(xMax, yMax);
             BottomLeft = new Vector2(xMin, yMin);
@@ -59,17 +65,27 @@ namespace VT.Utilities
                 && yMax == other.yMax;
         }
 
-        public static bool operator ==(Boundary2D left, Boundary2D right)
-        {
-            return left.Equals(right);
-        }
+        public static Boundary2D Zero => new Boundary2D();
 
-        public static bool operator !=(Boundary2D left, Boundary2D right)
-        {
-            return !(left == right);
-        }
+        public static Boundary2D operator *(Boundary2D left, float right) => new Boundary2D(left.Center, left.Dimension * right);
+
+        public static Boundary2D operator *(float left, Boundary2D right) => new Boundary2D(right.Center, right.Dimension * left);
+
+        public static Boundary2D operator /(Boundary2D left, float right) => new Boundary2D(left.Center, left.Dimension / right);
+
+        public static Boundary2D operator /(float left, Boundary2D right) => new Boundary2D(right.Center, right.Dimension / left);
+
+        public static bool operator ==(Boundary2D left, Boundary2D right) => left.Equals(right);
+
+        public static bool operator !=(Boundary2D left, Boundary2D right) => !(left == right);
 
         public float xMin, xMax, yMin, yMax;
+        public Vector2 Dimension;
+        public Vector2 Center;
+        public Vector2 Top;
+        public Vector2 Bottom;
+        public Vector2 Left;
+        public Vector2 Right;
         public Vector2 TopLeft;
         public Vector2 TopRight;
         public Vector2 BottomLeft;

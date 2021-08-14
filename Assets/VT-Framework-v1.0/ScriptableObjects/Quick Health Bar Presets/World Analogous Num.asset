@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca8283b287a95b49910601857014956, type: 3}
+  m_Name: World Analogous Num
+  m_EditorClassIdentifier: 
+  quickHealthBarPresets:
+    Type: 0
+    AlwaysShow: 0
+    IncludeNumber: 1
+    FontStyle: 0
+    FontAsset: {fileID: 11400000, guid: 77a1c6cae71a1774183107e110f7c5e3, type: 2}
+    MinFontSize: 1
+    MaxFontSize: 12
+    UseHealthBarMaterial: 0
+    HealthBarMaterial: {fileID: 0}
+    OutlineSprite: {fileID: 21300000, guid: d2fa16b4e8e25ab448ddb02430ef315c, type: 3}
+    BackgroundSprite: {fileID: 21300000, guid: d2fa16b4e8e25ab448ddb02430ef315c, type: 3}
+    FXBarSprite: {fileID: 21300000, guid: d2fa16b4e8e25ab448ddb02430ef315c, type: 3}
+    HealthBarSprite: {fileID: 21300000, guid: d2fa16b4e8e25ab448ddb02430ef315c, type: 3}
+    OutlineColor: {r: 0.909804, g: 0.62352943, b: 0.04705883, a: 1}
+    BackgroundColor: {r: 0.9490197, g: 0.2901961, b: 0.04705883, a: 1}
+    FXBarColor: {r: 0.8773585, g: 0.6463971, b: 0.47592562, a: 1}
+    HealthBarColor: {r: 0.8588236, g: 0.3647059, b: 0, a: 1}
+    OutlineThickness: 0.1
+    Size: {x: 6, y: 2, z: 0}
+    PositionOffset: {x: 0, y: 0, z: 0}
+    SortingLayer: -960525887
+    OrderInLayer: 0
+    WorldDamageFX: 0
+    UIDamageFX: 0

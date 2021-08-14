@@ -1,0 +1,8 @@
+///This file is auto generated. Do not edit.
+namespace ##NAMESPACE##
+{
+	public enum ##ENUM##
+	{
+		##CONTENT##
+	}
+}

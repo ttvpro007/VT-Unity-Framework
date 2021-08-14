@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using System.IO;
-using System;
 using UnityEngine.SceneManagement;
 using UnityEditor.SceneManagement;
 
@@ -91,7 +88,9 @@ public class BaseProjectFolders : EditorWindow
             foreach (string subFolder in directories[folder])
             {
                 path = assetPath + "/" + rootName + "/" + folder + "/" + subFolder;
-                Directory.CreateDirectory(path);
+
+                if (!System.IO.Directory.Exists(path))
+                    System.IO.Directory.CreateDirectory(path);
             }
         }
 

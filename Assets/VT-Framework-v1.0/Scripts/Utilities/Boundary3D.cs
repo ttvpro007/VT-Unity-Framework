@@ -6,12 +6,20 @@ namespace VT.Utilities
     {
         public Boundary3D(Vector3 center, Vector3 dimension)
         {
-            xMin = center.x - dimension.x / 2f;
-            xMax = center.x + dimension.x / 2f;
-            yMin = center.y - dimension.y / 2f;
-            yMax = center.y + dimension.y / 2f;
-            zMin = center.z - dimension.z / 2f;
-            zMax = center.z + dimension.z / 2f;
+            Center = center;
+            Dimension = dimension;
+            xMin = Center.x - Dimension.x / 2f;
+            xMax = Center.x + Dimension.x / 2f;
+            yMin = Center.y - Dimension.y / 2f;
+            yMax = Center.y + Dimension.y / 2f;
+            zMin = Center.z - Dimension.z / 2f;
+            zMax = Center.z + Dimension.z / 2f;
+            Top = new Vector3(Center.x, yMax, Center.z);
+            Bottom = new Vector3(Center.x, yMin, Center.z);
+            Left = new Vector3(xMin, Center.y, Center.z);
+            Right = new Vector3(xMax, Center.y, Center.z);
+            Back = new Vector3(Center.x, Center.y, zMin);
+            Front = new Vector3(Center.x, Center.y, zMax);
             TopLeftFront = new Vector3(xMin, yMax, zMax);
             TopRightFront = new Vector3(xMax, yMax, zMax);
             BottomLeftFront = new Vector3(xMin, yMin, zMax);
@@ -74,17 +82,27 @@ namespace VT.Utilities
                 && zMax == other.zMax;
         }
 
-        public static bool operator ==(Boundary3D left, Boundary3D right)
-        {
-            return left.Equals(right);
-        }
+        public static Boundary3D operator *(Boundary3D left, float right) => new Boundary3D(left.Center, left.Dimension * right);
 
-        public static bool operator !=(Boundary3D left, Boundary3D right)
-        {
-            return !(left == right);
-        }
+        public static Boundary3D operator *(float left, Boundary3D right) => new Boundary3D(right.Center, right.Dimension * left);
+
+        public static Boundary3D operator /(Boundary3D left, float right) => new Boundary3D(left.Center, left.Dimension / right);
+
+        public static Boundary3D operator /(float left, Boundary3D right) => new Boundary3D(right.Center, right.Dimension / left);
+
+        public static bool operator ==(Boundary3D left, Boundary3D right) => left.Equals(right);
+
+        public static bool operator !=(Boundary3D left, Boundary3D right) => !(left == right);
 
         public float xMin, xMax, yMin, yMax, zMin, zMax;
+        public Vector3 Dimension;
+        public Vector3 Center;
+        public Vector3 Top;
+        public Vector3 Bottom;
+        public Vector3 Left;
+        public Vector3 Right;
+        public Vector3 Back;
+        public Vector3 Front;
         public Vector3 TopLeftFront;
         public Vector3 TopRightFront;
         public Vector3 BottomLeftFront;

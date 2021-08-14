@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace VT
+namespace VT.Utilities
 {
     [RequireComponent(typeof(BoxCollider2D))]
     public class GenericDragableCompoment2D : MonoBehaviour

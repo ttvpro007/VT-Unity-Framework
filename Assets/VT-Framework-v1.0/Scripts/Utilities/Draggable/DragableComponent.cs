@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace VT
+namespace VT.Utilities
 {
     [RequireComponent(typeof(BoxCollider2D))]
     public class DragableComponent : MonoBehaviour
