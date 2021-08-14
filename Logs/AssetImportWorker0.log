@@ -792,3 +792,4 @@ Received Import Request.
 Start importing Assets/VT-Framework-v1.0/Scripts/Code Generator/Editor/Generators/Class/ClassGenerator.cs using Guid(38fd62bf0a0bc334ba20dd30c434d10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '011c8202b6912f88d7132c81a51dfcee') in 0.009522 seconds 
   Import took 0.014398 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
